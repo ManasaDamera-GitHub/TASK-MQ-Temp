@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+    position: fixed;
+    width: 100%;
+    position: relative;
+}
+
+.contact {
+    background-color: lightsalmon;
+    color: #fff;
+}
+
+
+img {
+    width: 5%;
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.icon {
+    display: none;
+    font-size: 1.5rem;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.home:hover,
+.about:hover,
+.landing:hover {
+    background-color: lightsalmon;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid none;
+}
+
+.container1 {
+    background-image: url(https://wallpapercave.com/wp/wp3179992.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+
+}
+
+.section {
+    position: absolute;
+    right: 20px;
+    bottom: 55%;
+    background-color: #fff;
+    width: 35vw;
+    height: 35vh;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.l1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 10px;
+}
+
+.l2 {
+    background-color: orangered;
+    border: 2px solid none;
+    border-radius: 20px;
+    width: 30vw;
+    font-weight: 600;
+    margin: 0px 10px 0px 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    padding: 10px;
+}
+
+.l2:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.d1 {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    justify-content: center;
+
+}
+
+.icon1 {
+    font-size: 1.3rem;
+    padding-top: 5px;
+}
+
+.text {
+    font-weight: 900;
+}
+
+.text:hover,
+.icon:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* @media screen and (min-width: 300px) and (max-width: 500px) { */
+@media screen and (width <=600px) {
+
+    nav {
+        display: none;
+    }
+
+    .icon {
+        display: inline-block;
+
+    }
+
+    img {
+        display: inline-block;
+    }
+
+    .section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* height: 100%;
+        width: 50%;  */
+        /* margin: 10px;
+        /* height: 25vh; */
+    }
+
+    .l1 {
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .container1 {
+        background-image: url(https://wallpapercave.com/wp/wp3179992.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
